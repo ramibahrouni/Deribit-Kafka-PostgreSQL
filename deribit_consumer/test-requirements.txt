@@ -1,0 +1,11 @@
+tomli==2.0.1
+pexpect==4.8.0
+pickleshare==0.7.5
+prompt-toolkit==3.0.36
+ptyprocess==0.7.0
+Pygments==2.14.0
+websockets==10.4
+loguru==0.6.0
+confluent_kafka==1.9.2
+asyncio==3.4.3
+pydantic==1.10.4

@@ -1,0 +1,28 @@
+{
+  "jsonrpc": "2.0",
+  "method": "subscription",
+  "params": {
+    "channel": "ticker.BTC-29DEC23-18000-P.100ms",
+    "data": {
+      "underlying_price": 16754.84,
+      "underlying_index": "BTC-29DEC23",
+      "timestamp": 1672702263573,
+      "settlement_price": 0.25961694,
+      "open_interest": 0,
+      "min_price": 0.212,
+      "max_price": 0.391,
+      "mark_price": 0.2875,
+      "mark_iv": 61.43,
+      "last_price": 0.1825,
+      "interest_rate": 0,
+      "instrument_name": "BTC-29DEC23-18000-P",
+      "index_price": 16708.54,
+      "bid_iv": 61.17,
+      "best_bid_price": 0.2865,
+      "best_bid_amount": 6,
+      "best_ask_price": 0.2875,
+      "best_ask_amount": 0.4,
+      "ask_iv": 61.43
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "type": "record",
+    "namespace": "ch.laevitas",
+    "name": "PriceDetails",
+    "fields": [
+        {
+            "name": "underlying_price",
+            "type": "double"
+        },
+        {
+            "name": "timestamp",
+            "type": "double"
+        },
+        {
+            "name": "settlement_price",
+            "type": "double"
+        },
+        {
+            "name": "open_interest",
+            "type": "double"
+        },
+        {
+            "name": "min_price",
+            "type": "double"
+        },
+        {
+            "name": "max_price",
+            "type": "double"
+        },
+        {
+            "name": "mark_price",
+            "type": "double"
+        },
+        {
+            "name": "mark_iv",
+            "type": "double"
+        },
+        {
+            "name": "last_price",
+            "type": "double"
+        },
+        {
+            "name": "interest_rate",
+            "type": "double"
+        },
+        {
+            "name": "instrument_name",
+            "type": "string"
+        },
+        {
+            "name": "index_price",
+            "type": "double"
+        },
+        {
+            "name": "bid_iv",
+            "type": "double"
+        },
+        {
+            "name": "best_bid_price",
+            "type": "double"
+        },
+        {
+            "name": "best_bid_amount",
+            "type": "double"
+        },
+        {
+            "name": "best_ask_price",
+            "type": "double"
+        },
+        {
+            "name": "best_ask_amount",
+            "type": "double"
+        },
+        {
+            "name": "ask_iv",
+            "type": "double"
+        },
+        {
+            "name": "currency",
+            "type": "string"
+        },
+        {
+            "name": "maturity",
+            "type": "string"
+        },
+        {
+            "name": "strike",
+            "type": "string"
+        },
+        {
+            "name": "type",
+            "type": "string"
+        }
+    ]
+}

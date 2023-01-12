@@ -1,0 +1,18 @@
+version: '3.5'
+
+services:
+  consumer:
+    build: .
+    environment:
+      - KAFKA_BROKER = 'broker:9092'
+      - KAFKA_TOPIC = 'deribit'
+      - KAFKA_PERSIST_TOPIC = 'deribit_prices'
+      - SCHEMA_REGISTRY = 'http://schema-registry:8081'
+    env_file:
+      - .env
+    networks:
+      - laevitas_network
+
+networks:
+  laevitas_network:
+    name: laevitas_bridge

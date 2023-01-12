@@ -1,0 +1,11 @@
+pexpect==4.8.0
+pickleshare==0.7.5
+prompt-toolkit==3.0.36
+ptyprocess==0.7.0
+Pygments==2.14.0
+six==1.16.0
+traitlets==5.8.0
+wcwidth==0.2.5
+websockets==10.4
+loguru==0.6.0
+kafka-python

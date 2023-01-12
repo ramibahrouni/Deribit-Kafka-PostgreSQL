@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  deribit:
+    build: .
+    environment:
+      - KAFKA_BROKER = 'broker:9092'
+      - KAFKA_TOPIC = 'deribit'
+      - TESTNET = False
+      - CLIENT_ID = 'HD5Poh0t'
+      - CLIENT_SECRET = 'B4rgiZopaPg83Od0oah037IUPJ96teR8-1svxUmeFB8'
+    env_file:
+      - .env
+    networks:
+      - laevitas_network
+
+networks:
+  laevitas_network:
+    name: laevitas_bridge
