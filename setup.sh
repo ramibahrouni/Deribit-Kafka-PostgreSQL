@@ -36,39 +36,8 @@ echo "DB,USER,PASS: laevitas"
 
 echo "Installing Deribit pipeline ..."
 
-docker-compose  -f deribit/docker-compose.yml up -d
+docker-compose  -f deribit_consumer/docker-compose.yml up -d
 
 echo "{$DATE}Deribit Pipeline is installed successfully, proceeding to install Consumer pipeline"
 
 docker-compose  -f persistent_consumer/docker-compose.yml up -d
-
-echo "{$DATE} Consumer Pipeline is installed successfully"
-#"table.name.format": "deribit_prices",
-
-#$ curl -s   -X "POST" "http://localhost:8083/connectors/"   -H "Content-Type: application/json" -d '
-#{
-#  "name": "pg-sink-connector",
-#  "config": {
-#    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
-#    "tasks.max": "1",
-#    "errors.log.enable": "true",
-#    "errors.log.include.messages": "true",
-#    "topics": "deribit_prices",
-#    "connection.url": "jdbc:postgresql://postgres:5432/laevitas",
-#    "connection.user": "laevitas",
-#    "connection.password": "laevitas",
-#    "dialect.name": "PostgreSqlDatabaseDialect",
-#    "connection.attempts": "600",
-#    "connection.backoff.ms": "600000",
-#    "batch.size": "20",
-#    "auto.create": "true",
-#    "auto.evolve": "true",
-#    "max.retries": "150",
-#    "retry.backoff.ms": "30000",
-#    "errors.tolerance": "all",
-#    "errors.log.enable":true,
-#    "errors.log.include.messages":true
-#    "errors.retry.delay.max.ms": 60000,
-#    "errors.retry.timeout": 300000
-#  }
-#}'
