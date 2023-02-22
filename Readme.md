@@ -7,7 +7,7 @@
 
 * [Deribit Prices Extractor](#deribit-prices-extractor) 
 
-  * [Tech stack:](#tech-stack-) 
+  * [Tech stack](#tech-stack-) 
 
   * [Testing stack](#testing-stack) 
 
@@ -43,7 +43,7 @@ Both of apps are deployed in docker.
  
  
 
-## Tech stack: 
+## Tech stack
 
 * Derbit API 
 
